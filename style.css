@@ -13,7 +13,9 @@ body {
   grid-row-end: 3;
   background-color: rgb(75, 182, 248);
   padding-left: 30px;
-  gap: 100px;
+  display: grid;
+  grid-template-rows: 100px 400px 250px;
+  gap: 40px;
 }
 
 .header {
@@ -46,13 +48,14 @@ text-decoration: none;
 
 .dashboard-header svg{
   width: 50px;
-  align-self: center;
+  align-self: center
 
 }
 
 .dashboard-header p{
   color: white;
   font-size: 30px;
+  align-self: center;
 }
   
 .nav-container svg {
