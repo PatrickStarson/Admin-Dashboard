@@ -14,12 +14,13 @@ body {
   background-color: rgb(75, 182, 248);
   padding-left: 30px;
   display: grid;
-  grid-template-rows: 100px 400px 250px;
+  grid-template-rows: 100px 400px 1fr;
   gap: 40px;
 }
 
 .header {
   background-color: rgb(255, 255, 255);
+  padding: 20px 50px;
 }
 
 .main-section {
@@ -75,4 +76,21 @@ text-decoration: none;
 
 .preferences p{
   color: white;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.search-container svg{
+  width: 30px;
+}
+
+.search-input {
+  width: 600px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color:rgb(237, 240, 250);
 }
