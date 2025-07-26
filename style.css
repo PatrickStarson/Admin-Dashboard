@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   height: 100vh;
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -31,7 +32,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  column-gap:  100px;
+  
 }
 
 .main-section {
@@ -113,7 +114,7 @@ text-decoration: none;
   grid-template-columns: repeat(3, auto);
   align-items: center;
   justify-items: center;
-  gap: 30px;
+  padding: 0px 30px;
 }
 
 .notification-bell {
@@ -175,5 +176,23 @@ text-decoration: none;
   grid-row-end: 3;
   align-self: self-start;
   margin: 0;
+}
+
+.action-buttons{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  align-items: center;
+  
+}
+
+.action-buttons *{
+  background-color: var(--blue);
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
 }
 
