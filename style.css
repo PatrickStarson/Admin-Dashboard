@@ -1,5 +1,5 @@
 :root {
-  --font: "Roboto", sans-serif;
+
   --blue: rgb(75, 182, 248);
   --blue-grey: rgb(237, 240, 250);
   --white: rgb(255, 255, 255);
@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-family: "Roboto", sans-serif;;
   height: 100vh;
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -36,15 +36,16 @@ body {
 }
 
 .main-section {
-  padding: 40px 40px 100px 20px;
+  padding: 40px 20px 100px 20px;
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: var(--blue-grey);
   box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.399);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .sidebar p{
-  font-family: var(--font);
   font-size: 22px;
   font-weight: bold;
 }
@@ -64,7 +65,6 @@ text-decoration: none;
 .dashboard-header svg{
   width: 50px;
   align-self: center
-
 }
 
 .dashboard-header p{
@@ -133,7 +133,6 @@ text-decoration: none;
 .profile-name {
   text-decoration: none;
   color: black;
-  font-family: var(--font);
   font-weight: bold;
   font-size: 20px;
 }
@@ -168,7 +167,6 @@ text-decoration: none;
 
 .greeting-text-large {
   color: black;
-  font-family: var(--font);
   font-weight: bold;
   font-size: 25px;
   grid-column-start: 2;
@@ -197,15 +195,15 @@ text-decoration: none;
 }
 
 .main-section h1, h2{
-  font-family: var(--font);
   font-size: 22px;
   margin: 0;
 }
 
-.your-projects-section {
+.your-projects-section,
+.announcements-section,
+.trending-section {
 display: grid;
 grid-template-rows: 40px 1fr;
-
 }
 
 .cards {
@@ -248,3 +246,88 @@ grid-template-rows: 40px 1fr;
   grid-template-columns: repeat(3, auto);
   gap: 30px;
 }
+
+.left-section {
+  display: grid;
+  grid-template-rows: 400px 400px;
+  gap: 50px;
+}
+
+.announcements-container,
+.trends-container {
+  box-sizing: border-box;
+  width: 270px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.245);
+  background-color: var(--white);
+}
+
+.announcements-section {
+  justify-self: end;
+}
+
+.trending-section {
+  justify-self: end;
+  align-self: end;
+}
+
+.trends-container {
+  display: grid;
+  align-items: center;
+  gap: 30px;
+}
+
+.trending-profile {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px;
+}
+
+.trending-profile a{
+  text-decoration: none;
+}
+
+.trending-profile div:last-child{
+  align-self: center;
+}
+
+.profile-description {
+  color: grey;
+  margin: 0;
+}
+.profile-tag {
+  color: black;
+  margin: 0;
+}
+
+
+
+.announcement-one,
+.announcement-two,
+.announcement-three {
+  padding: 10px 5px;
+}
+.announcements-container .title{
+  font-weight: 600;
+  margin: 0;
+}
+
+.announcements-container .text{
+  color: grey;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.announcement-two{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+
+
+
+
+
+
