@@ -183,7 +183,6 @@ text-decoration: none;
   grid-template-columns: repeat(3, auto);
   gap: 20px;
   align-items: center;
-  
 }
 
 .action-buttons *{
